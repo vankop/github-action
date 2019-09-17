@@ -88,7 +88,7 @@ export async function run() {
       throw new Error("No Lcov path specified.");
     }
 
-    console.log(`Using lcov file: ${pathToLcov}`);
+    console.log(`Using lcov file: ${require('path').resolve(pathToLcov)}`);
 
     let file;
 
